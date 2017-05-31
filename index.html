@@ -1,0 +1,87 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<!--css-->
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<!--libraries-->
+	<script language="javascript" type="text/javascript" src="lib/p5.min.js"></script>
+	<script language="javascript" type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+	<!--game files-->
+	<script language="javascript" type="text/javascript" src="js/sketch.js"></script>
+	<script language="javascript" type="text/javascript" src="js/MapSquare.js"></script>
+	<script language="javascript" type="text/javascript" src="js/Dungeon.js"></script>
+	<script language="javascript" type="text/javascript" src="js/Floor.js"></script>
+	<script language="javascript" type="text/javascript" src="js/Square.js"></script>
+	<script language="javascript" type="text/javascript" src="js/Mob.js"></script>
+	<script language="javascript" type="text/javascript" src="js/Player.js"></script>
+	<script language="javascript" type="text/javascript" src="js/Room.js"></script>
+	<script language="javascript" type="text/javascript" src="js/Region.js"></script>
+	<script language="javascript" type="text/javascript" src="js/SightLine.js"></script>
+	<script language="javascript" type="text/javascript" src="js/UserInterface.js"></script>
+	<script language="javascript" type="text/javascript" src="js/StartSequence.js"></script>
+	<script language="javascript" type="text/javascript" src="js/DungeonFactory.js"></script>
+	<script language="javascript" type="text/javascript" src="js/FloorFactory.js"></script>
+	<script language="javascript" type="text/javascript" src="js/ItemFactory.js"></script>
+	<script language="javascript" type="text/javascript" src="js/Item.js"></script>
+	<script language="javascript" type="text/javascript" src="js/PlayerFactory.js"></script>
+	<script language="javascript" type="text/javascript" src="js/ButtonHandler.js"></script>
+
+</head>
+
+<body>
+
+	<div id="game"></div>
+	<div id="topleft">
+		<div id="playerpanel">
+			<div id="playerimg">
+				<img src="data/playerTextureR.png" style="width:100%;" />
+			</div>
+			<div style="position:absolute; dislay:block; width:10.5vw; height:8vw; margin:.5vw; margin-left:9vw; text-align:left; background-color:red;">
+				<div class="stat" id="stat1">
+					<pre>Strength:	3</pre>
+				</div>
+
+				<div class="stat" id="stat2">
+					<pre>Dexterity:	3</pre>
+				</div>
+
+				<div class="stat" id="stat3">
+					<pre>Intelligence:	3</pre>
+				</div>
+
+				<div class="stat" id="maxhealth">
+					<pre>Max Health:	500</pre>
+				</div>
+			</div>
+		</div>
+		<div style="position:relative; display:block; width:100%; height:1vw; margin-top:.2vw;">
+			<div id="healthbar"></div>
+			<div id="health"></div>
+		</div>
+		<div style="position:relative; display:block; width:100%; height:.4vw; margin-top:.5vw;">
+			<div id="xpbar"></div>
+			<div id="xp"></div>
+		</div>
+	</div>
+	<div id="helppanel">
+		<a href="help.html">
+			<div class="slot help" id="questionslot"><img src="https://cdn4.iconfinder.com/data/icons/aiga-symbol-signs/444/aiga_information-512.png" /></div>
+		</a>
+		<a href="settings.html">
+			<div class="slot help" id="settingslot"><img src="https://cdn1.iconfinder.com/data/icons/material-core/20/settings-128.png" /></div>
+		</a>
+	</div>
+	<div id="inventory">
+		<div class="slot"><img src="https://d30y9cdsu7xlg0.cloudfront.net/png/16771-200.png" /></div>
+	</div>
+	<div id="actionspanel">
+		<div class="slot action" id="pattack"> <img src="data/actions/sword.png" /></div>
+		<div class="slot action" id="mattack"><img src="data/actions/fireball.png" /></div>
+		<div class="slot action" id="door"><img src="data/actions/door.png" /></div>
+	</div>
+
+
+</body>
+
+</html>
